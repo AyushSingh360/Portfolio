@@ -2,7 +2,7 @@
 
 # 🏆 Professional Portfolio - Certificates & Achievements
 
-<img src="/project/public/14.png" alt="Portfolio Banner" width="100%" style="border-radius: 10px; margin: 20px 0;"/>
+<img src="public/14.png" alt="Portfolio Banner" width="100%" style="border-radius: 10px; margin: 20px 0;"/>
 
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=000000)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=000000)](https://www.typescriptlang.org/)
@@ -49,13 +49,13 @@
 <div align="center">
 
 ### 🌟 Hero Section
-<img src="/project/public/14.png" alt="Hero Section" width="80%" style="border-radius: 10px; margin: 10px;"/>
+<img src="public/14.png" alt="Hero Section" width="80%" style="border-radius: 10px; margin: 10px;"/>
 
 ### 🏆 Certificates Showcase
-<img src="/project/public/15.png" alt="Certificates Section" width="80%" style="border-radius: 10px; margin: 10px;"/>
+<img src="public/15.png" alt="Certificates Section" width="80%" style="border-radius: 10px; margin: 10px;"/>
 
 ### 🌙 Dark Mode
-<img src="/project/public/16.png" alt="Dark Mode" width="80%" style="border-radius: 10px; margin: 10px;"/>
+<img src="public/16.png" alt="Dark Mode" width="80%" style="border-radius: 10px; margin: 10px;"/>
 
 </div>
 
