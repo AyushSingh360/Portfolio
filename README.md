@@ -49,13 +49,13 @@
 <div align="center">
 
 ### 🌟 Hero Section
-<img src="public/14.png" alt="Hero Section" width="80%" style="border-radius: 10px; margin: 10px;"/>
+<img src="public/14.png" alt="Hero Section" width="80%" style="border-radius: 16px; margin: 10px;"/>
 
 ### 🏆 Certificates Showcase
-<img src="public/15.png" alt="Certificates Section" width="80%" style="border-radius: 10px; margin: 10px;"/>
+<img src="public/15.png" alt="Certificates Section" width="80%" style="border-radius: 16px; margin: 10px;"/>
 
 ### 🌙 Dark Mode
-<img src="public/16.png" alt="Dark Mode" width="80%" style="border-radius: 10px; margin: 10px;"/>
+<img src="public/16.png" alt="Dark Mode" width="80%" style="border-radius: 16px; margin: 10px;"/>
 
 </div>
 
@@ -71,7 +71,7 @@ Make sure you have the following installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/AyushSingh360/professional-portfolio.git
+git clone https://github.com/AyushSingh360/portfolio.git
 
 # Navigate to project directory
 cd professional-portfolio
