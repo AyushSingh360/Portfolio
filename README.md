@@ -175,7 +175,7 @@ const skillCategories = [
 ```
 professional-portfolio/
 ├── 📁 public/
-│   └── vite.svg
+│   └── Images
 ├── 📁 src/
 │   ├── 📁 components/
 │   │   ├── About.tsx          # About section
@@ -284,7 +284,7 @@ If you have any questions or need help customizing your portfolio:
 
 **Made with ❤️ and dedication to excellence**
 
-[![GitHub stars](https://img.shields.io/github/stars/AyushSingh360/professional-portfolio?style=social)](https://github.com/AyushSingh360/professional-portfolio/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/AyushSingh360/professional-portfolio?style=social)](https://github.com/AyushSingh360/professional-portfolio/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/AyushSingh360/portfolio?style=social)](https://github.com/AyushSingh360/portfolio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/AyushSingh360/portfolio?style=social)](https://github.com/AyushSingh360/portfolio/network/members)
 
 </div>
