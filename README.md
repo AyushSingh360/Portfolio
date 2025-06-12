@@ -74,7 +74,7 @@ Make sure you have the following installed:
 git clone https://github.com/AyushSingh360/portfolio.git
 
 # Navigate to project directory
-cd professional-portfolio
+cd portfolio
 
 # Install dependencies
 npm install
