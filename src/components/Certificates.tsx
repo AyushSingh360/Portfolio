@@ -108,18 +108,17 @@ const Certificates = () => {
       verificationUrl: "https://verify.onwingspan.com/"
     },
     {
-      id: 10,
-      title: "Build a Gemini-Powered Animated Story Video Generator",
+      id: 10, "Frontend Development",
       issuer: "Let's Upgrade",
       date: "2023",
-      description: "Demonstrates proficiency in AI and GEnerative Aiand their best practices.",
+      description: "Demonstrates proficiency in Frontend Development and their best practices.",
       image: "12.jpeg",
-      credentialId: "JUEBWAlMAY125976",
-      verificationUrl: "https://verify.letsupgrade.in/certificate/JUEBWAlMAY125976"
+      credentialId: "CERT-2A3D0742",
+      verificationUrl: "https://oneroadmap.io/skills/frontend/certificate/CERT-2A3D0742"
     },
     {
       id: 11,
-      title: "Prom[t Engineering/ Vibe Coding",
+      title: "Promt Engineering/ Vibe Coding",
       issuer: "Simplilearn",
       date: "2025",
       description: "Understanding of prompt engineering, Learned how Vibe coding works.",
