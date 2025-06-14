@@ -15,7 +15,6 @@ interface Certificate {
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<Certificate | null>(null);
 
-  // Sample certificates - you'll replace these with your actual certificates
   const certificates: Certificate[] = [
     {
       id: 1,
@@ -42,7 +41,7 @@ const Certificates = () => {
       title: "Elements Of AI",
       issuer: "MinnaLearn UNIVERSITY OF HELSINKI Finland",
       date: "2023",
-      description: "Demonstrates expertise in Ai Fundamentsls .",
+      description: "Demonstrates expertise in Ai Fundamentsls.",
       image: "2.png",
       credentialId: "10xtkec5cL+t",
       verificationUrl: "https://certificates.mooc.fi/validate/1oxtkec5c4t"
@@ -62,7 +61,7 @@ const Certificates = () => {
       title: "Geeks4Geeks DSA Bootcamp",
       issuer: "Geeks4Geeks",
       date: "2025",
-      description: "Demonstrates proficiency in Data Struture problems>",
+      description: "Demonstrates proficiency in Data Structure problems.",
       image: "4.jpg",
       credentialId: "beb04069df16f39e7b466562172da2bb",
       verificationUrl: "https://media.geeksforgeeks.org/courses/certificates/beb04069df16f39e7b466562172da2bb.pdf"
@@ -72,19 +71,19 @@ const Certificates = () => {
       title: "Figma Bootcamp",
       issuer: "Let's Upgrade",
       date: "2025",
-      description: "Validates skills in containerization,Figma UI/UX, and best practices",
+      description: "Validates skills in containerization, Figma UI/UX, and best practices.",
       image: "5.jpg",
       credentialId: "LUEFGMAR1251486",
       verificationUrl: "https://verify.letsupgrade.in/certificate/LUEFGMAR1251486"
     },
     {
       id: 7,
-      title: "Generative AI ",
+      title: "Generative AI",
       issuer: "Infosys",
       date: "2025",
       description: "Validates knowledge of generative AI and its uses.",
       image: "6.jpg",
-      credentialId: "``",
+      credentialId: "",
       verificationUrl: "https://verify.onwingspan.com/"
     },
     {
@@ -104,13 +103,14 @@ const Certificates = () => {
       date: "2025",
       description: "Validates expertise in React development, including hooks, state management, and modern patterns.",
       image: "11.jpeg",
-      credentialId: "``",
+      credentialId: "",
       verificationUrl: "https://verify.onwingspan.com/"
     },
     {
-      id: 10, "Frontend Development",
-      issuer: "Let's Upgrade",
-      date: "2023",
+      id: 10,
+      title: "Frontend Development",
+      issuer: "oneroadmap",
+      date: "2025",
       description: "Demonstrates proficiency in Frontend Development and their best practices.",
       image: "12.jpeg",
       credentialId: "CERT-2A3D0742",
@@ -118,7 +118,7 @@ const Certificates = () => {
     },
     {
       id: 11,
-      title: "Promt Engineering/ Vibe Coding",
+      title: "Prompt Engineering/ Vibe Coding",
       issuer: "Simplilearn",
       date: "2025",
       description: "Understanding of prompt engineering, Learned how Vibe coding works.",
@@ -145,8 +145,7 @@ const Certificates = () => {
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300 hover:scale-105 transform cursor-default">Certificates & Achievements</h2>
           <div className="w-20 h-1 bg-black dark:bg-white mx-auto mb-6 transition-all duration-300 hover:w-24"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
-            A comprehensive collection of professional certifications and achievements that demonstrate 
-            expertise across various technologies and platforms.
+            A comprehensive collection of professional certifications and achievements that demonstrate expertise across various technologies and platforms.
           </p>
         </div>
 
@@ -160,7 +159,7 @@ const Certificates = () => {
               <div className="aspect-video bg-gray-200 dark:bg-gray-700 overflow-hidden">
                 <img
                   src={cert.image}
-                  alt={cert.title}
+                  alt={cert.title || 'Certificate'}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -174,28 +173,29 @@ const Certificates = () => {
                   </div>
                   <Award className="text-gray-400 dark:text-gray-500 ml-2 flex-shrink-0 group-hover:text-black dark:group-hover:text-white transition-all duration-300 group-hover:scale-110" size={24} />
                 </div>
-                
+
                 <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3 transition-colors duration-300">
                   <Calendar size={16} className="mr-2 group-hover:scale-110 transition-transform duration-200" />
                   {cert.date}
                 </div>
-                
+
                 <p className="text-gray-700 dark:text-gray-300 text-sm line-clamp-3 mb-4 transition-colors duration-300">
                   {cert.description}
                 </p>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded transition-all duration-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-700">
-                    {cert.credentialId}
+                    {cert.credentialId?.trim() && cert.credentialId !== "``" ? cert.credentialId : 'N/A'}
                   </span>
-                  <ExternalLink size={16} className="text-gray-400 dark:text-gray-500 group-hover:text-black dark:group-hover:text-white transition-all duration-300 group-hover:scale-110" />
+                  {cert.verificationUrl && cert.verificationUrl !== "#" && (
+                    <ExternalLink size={16} className="text-gray-400 dark:text-gray-500 group-hover:text-black dark:group-hover:text-white transition-all duration-300 group-hover:scale-110" />
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Certificate Modal */}
         {selectedCertificate && (
           <div className="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center p-4 z-50 animate-fadeIn">
             <div className="bg-white dark:bg-gray-900 rounded-2xl max-w-2xl w-full max-h-screen overflow-y-auto transform animate-slideUp transition-all duration-300">
@@ -212,29 +212,26 @@ const Certificates = () => {
                   <X size={20} className="text-gray-700 dark:text-gray-300" />
                 </button>
               </div>
-              
+
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
-                  {selectedCertificate.title}
-                </h3>
-                <p className="text-lg text-gray-600 dark:text-gray-400 mb-4 transition-colors duration-300">{selectedCertificate.issuer}</p>
-                
-                <div className="flex items-center text-gray-500 dark:text-gray-400 mb-6 transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{selectedCertificate.title}</h3>
+                <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">{selectedCertificate.issuer}</p>
+                <div className="flex items-center text-gray-500 dark:text-gray-400 mb-6">
                   <Calendar size={18} className="mr-2" />
                   {selectedCertificate.date}
                 </div>
-                
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 transition-colors duration-300">
-                  {selectedCertificate.description}
-                </p>
-                
-                <div className="border-t dark:border-gray-700 pt-6 transition-colors duration-300">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{selectedCertificate.description}</p>
+                <div className="border-t dark:border-gray-700 pt-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mb-1 transition-colors duration-300">Credential ID</p>
-                      <p className="font-mono text-gray-900 dark:text-white transition-colors duration-300">{selectedCertificate.credentialId}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Credential ID</p>
+                      <p className="font-mono text-gray-900 dark:text-white">
+                        {selectedCertificate.credentialId?.trim() && selectedCertificate.credentialId !== "``"
+                          ? selectedCertificate.credentialId
+                          : 'N/A'}
+                      </p>
                     </div>
-                    {selectedCertificate.verificationUrl && (
+                    {selectedCertificate.verificationUrl && selectedCertificate.verificationUrl !== "#" && (
                       <a
                         href={selectedCertificate.verificationUrl}
                         className="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105 hover:shadow-lg"
