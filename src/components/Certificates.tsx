@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Calendar, Award, ExternalLink, X } from 'lucide-react'; // Make sure lucide-react is installed
 
 interface Certificate {
   id: number;
@@ -134,11 +135,16 @@ const certificates: Certificate[] = [
   }
 ];
 
-return (
+const Certificates: React.FC = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState<Certificate | null>(null);
+
+  return (
     <section id="certificates" className="py-20 bg-gray-50 dark:bg-gray-800 transition-all duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300 hover:scale-105 transform cursor-default">Certificates & Achievements</h2>
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300 hover:scale-105 transform cursor-default">
+            Certificates & Achievements
+          </h2>
           <div className="w-20 h-1 bg-black dark:bg-white mx-auto mb-6 transition-all duration-300 hover:w-24"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
             A comprehensive collection of professional certifications and achievements that demonstrate 
@@ -191,7 +197,6 @@ return (
           ))}
         </div>
 
-        {/* Certificate Modal */}
         {selectedCertificate && (
           <div className="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center p-4 z-50 animate-fadeIn">
             <div className="bg-white dark:bg-gray-900 rounded-2xl max-w-2xl w-full max-h-screen overflow-y-auto transform animate-slideUp transition-all duration-300">
