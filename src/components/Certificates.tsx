@@ -18,7 +18,7 @@ const certificates: Certificate[] = [
     issuer: "Artificial Intelligence and Machine learning",
     date: "2025",
     description: "AI/ML Certified (GeeksforGeeks): Mastering intelligent systems for data-driven innovation.",
-    image: "1.jpg",
+    image: "/1.jpg",
     credentialId: "Geeks4Geeks",
     verificationUrl: "https://media.geeksforgeeks.org/certificates/1745579346/922840243643b92c6097ca3eb77cc2da.pdf"
   },
@@ -28,7 +28,7 @@ const certificates: Certificate[] = [
     issuer: "Google Cloud",
     date: "2025",
     description: "Validates skills in designing, building, and deploying applications on Google Cloud Platform.",
-    image: "7.jpeg",
+    image: "/7.jpeg",
     credentialId: "8151180",
     verificationUrl: "#"
   },
@@ -38,7 +38,7 @@ const certificates: Certificate[] = [
     issuer: "MinnaLearn UNIVERSITY OF HELSINKI Finland",
     date: "2023",
     description: "Demonstrates expertise in AI Fundamentals.",
-    image: "2.png",
+    image: "/2.png",
     credentialId: "10xtkec5cLt",
     verificationUrl: "https://certificates.mooc.fi/validate/1oxtkec5c4t"
   },
@@ -48,7 +48,7 @@ const certificates: Certificate[] = [
     issuer: "Simplilearn",
     date: "2025",
     description: "Contributed on Hugging Face project during Initial Development",
-    image: "3.jpeg",
+    image: "/3.jpeg",
     credentialId: "8315648",
     verificationUrl: "#"
   },
@@ -58,7 +58,7 @@ const certificates: Certificate[] = [
     issuer: "Geeks4Geeks",
     date: "2025",
     description: "Demonstrates proficiency in Data Structure problems.",
-    image: "4.jpg",
+    image: "/4.jpg",
     credentialId: "beb04069df16f39e7b466562172da2bb",
     verificationUrl: "https://media.geeksforgeeks.org/courses/certificates/beb04069df16f39e7b466562172da2bb.pdf"
   },
@@ -68,7 +68,7 @@ const certificates: Certificate[] = [
     issuer: "Let's Upgrade",
     date: "2025",
     description: "Validates skills in containerization, Figma UI/UX, and best practices.",
-    image: "5.jpg",
+    image: "/5.jpg",
     credentialId: "LUEFGMAR1251486",
     verificationUrl: "https://verify.letsupgrade.in/certificate/LUEFGMAR1251486"
   },
@@ -78,7 +78,7 @@ const certificates: Certificate[] = [
     issuer: "Infosys",
     date: "2025",
     description: "Validates knowledge of generative AI and its uses.",
-    image: "6.jpg",
+    image: "/6.jpg",
     credentialId: "",
     verificationUrl: "https://verify.onwingspan.com/"
   },
@@ -88,7 +88,7 @@ const certificates: Certificate[] = [
     issuer: "FreeCodecamp",
     date: "2025",
     description: "Demonstrates understanding of infrastructure as code concepts and Python ML.",
-    image: "8.jpg",
+    image: "/8.jpg",
     credentialId: "fcc99084536-fea4-4422-a1d8-3ac1bbe9590a",
     verificationUrl: "https://www.freecodecamp.org/certification/fcc99084536-fea4-4422-a1d8-3ac1bbe9590a/machine-learning-with-python-v7"
   },
@@ -98,7 +98,7 @@ const certificates: Certificate[] = [
     issuer: "Infosys",
     date: "2025",
     description: "Validates expertise in React development, including hooks, state management, and patterns.",
-    image: "11.jpeg",
+    image: "/11.jpeg",
     credentialId: "",
     verificationUrl: "https://verify.onwingspan.com/"
   },
@@ -108,7 +108,7 @@ const certificates: Certificate[] = [
     issuer: "Let's Upgrade",
     date: "2023",
     description: "Demonstrates proficiency in Frontend Development and best practices.",
-    image: "12.jpeg",
+    image: "/12.jpeg",
     credentialId: "CERT-2A3D0742",
     verificationUrl: "https://oneroadmap.io/skills/frontend/certificate/CERT-2A3D0742"
   },
@@ -118,7 +118,7 @@ const certificates: Certificate[] = [
     issuer: "Simplilearn",
     date: "2025",
     description: "Understanding of prompt engineering, Learned how Vibe coding works.",
-    image: "9.jpeg",
+    image: "/9.jpeg",
     credentialId: "8310624",
     verificationUrl: "#"
   },
@@ -128,7 +128,7 @@ const certificates: Certificate[] = [
     issuer: "Let's Upgrade",
     date: "2025",
     description: "Demonstrates proficiency in Python programming fundamentals and OOP.",
-    image: "10.jpg",
+    image: "/10.jpg",
     credentialId: "LUEPYTMAR1253666",
     verificationUrl: "https://verify.letsupgrade.in/certificate/LUEPYTMAR1253666"
   }
